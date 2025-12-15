@@ -1,0 +1,11 @@
+# Track Unity plugin binaries with Git LFS
+firebase-packages/**/Firebase/Plugins/**/*.so filter=lfs diff=lfs merge=lfs -text
+firebase-packages/**/Firebase/Plugins/**/*.bundle filter=lfs diff=lfs merge=lfs -text
+firebase-packages/**/Firebase/Plugins/**/*.dll filter=lfs diff=lfs merge=lfs -text
+firebase-packages/**/Firebase/Plugins/**/*.a filter=lfs diff=lfs merge=lfs -text
+firebase-packages/**/Firebase/Plugins/**/*.aar filter=lfs diff=lfs merge=lfs -text
+firebase-packages/**/Firebase/Plugins/**/*.jar filter=lfs diff=lfs merge=lfs -text
+firebase-packages/**/Firebase/Plugins/**/*.so.* filter=lfs diff=lfs merge=lfs -text
+
+# Optional: any other large archives
+firebase-packages/**/*.tgz filter=lfs diff=lfs merge=lfs -text
